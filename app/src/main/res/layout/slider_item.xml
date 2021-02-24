@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:src="@drawable/ic_launcher_background"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="16dp"
+         android:id="@+id/image_view"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sia"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp"
+            android:id="@+id/name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UI Designer"
+            android:textColor="#292929"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_close_24"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
